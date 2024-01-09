@@ -1,0 +1,211 @@
+.textColor {
+  padding: 0.05rem !important;
+}
+
+.iconFont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  float: left;
+}
+
+div label input {
+  margin-right: 100px;
+}
+
+.cat {
+  margin: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  /* border: 1px solid #fff; */
+  overflow: hidden;
+  float: left;
+}
+
+.cat label {
+  float: left;
+  line-height: 3em;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+}
+
+.cat label span {
+  text-align: center;
+  /* padding: 3px 0; */
+  display: block;
+  font-size: 30px;
+}
+
+.cat label input {
+  position: absolute;
+  display: none;
+  color: #000 !important;
+}
+/* selects all of the text within the input element and changes the color of the text */
+.cat label input + span {
+  color: #000;
+}
+
+/* This will declare how a selected input will look giving generic properties */
+.cat input:checked + span {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.action input:checked + span {
+  background-color: #000000;
+}
+
+.selectFont {
+  width: 70px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border-bottom: 1px solid #818181;
+  position: relative;
+}
+
+.sidenav a svg:first-child {
+  margin: 0 15px;
+  float: left;
+  padding: 5px 0px;
+}
+
+.sidenav a svg.fa-plus, .sidenav a svg.fa-arrow-right {
+  margin: 0 15px;
+  float: right;
+  padding: 5px 0px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 260px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.btn-file{
+    position: relative;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+
+  .btn {
+    position: relative;
+  
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+  
+    overflow: hidden;
+  
+    border-width: 0;
+    outline: none;
+    border: none !important;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    
+    transition: background-color .3s;
+  }
+  
+  .btn:hover, .btn:focus {
+    background-color: #27ae60;
+  }
+  
+  .btn > * {
+    position: relative;
+  }
+  
+  .btn span {
+    display: block;
+    padding: 12px 24px;
+  }
+  
+  .btn:before {
+    content: "";
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    display: block;
+    width: 0;
+    padding-top: 0;
+      
+    border-radius: 100%;
+    
+    background-color: rgba(236, 240, 241, .3);
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+    
+    transition: width .2s ease-out, padding-top .2s ease-out;
+  }
+
+  .btn.btn-primary {
+    background-color: #e67e22;
+  }
+  
+  .btn.btn-primary:hover, .btn.btn-primary:focus {
+    background-color: #d35400;
+  }

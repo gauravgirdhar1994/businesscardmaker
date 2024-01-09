@@ -1,0 +1,40 @@
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: fixed !important;
+    z-index: 1;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  /* Navbar links on mouse-over */
+  /* .navbar a:hover {
+    background-color: #000;
+  } */
+  
+  /* Current/active navbar link */
+  .active {
+    float: left;
+    text-align: center;
+  }
+
+  .download{
+      float: right;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
